@@ -12,14 +12,14 @@ import {
   PdfExport,
   Edit,
   Inject,
-  Search
+  Search,
 } from "@syncfusion/ej2-react-grids";
 
 import { ordersData, contextMenuItems, ordersGrid } from "../data/dummy";
 import { Header } from "../components";
 
 const Orders = () => {
-  const toolbarOptions = ['Search'];
+  const toolbarOptions = ["Search"];
   const editing = { allowDeleting: true, allowEditing: true };
 
   return (
@@ -51,7 +51,7 @@ const Orders = () => {
             ExcelExport,
             Edit,
             PdfExport,
-            Search
+            Search,
           ]}
         />
       </GridComponent>
