@@ -36,9 +36,11 @@ const Ecommerce = () => {
 
   return (
     <div className="mt-24">
-      {/* Overview Top Panel */}
       <div className="flex flex-wrap lg:flex-nowrap justify-center ">
-        <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
+        <div
+          className="bg-white
+         dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center"
+        >
           <div className="flex justify-between items-center">
             <div>
               <p className="font-bold text-gray-400">Earnings</p>
@@ -76,7 +78,7 @@ const Ecommerce = () => {
               </button>
               <p className="mt-3">
                 <span className="text-lg font-semibold">{item.amount}</span>
-                <span className={`text-sm text-${item.pcColor} ml-2`}>
+                <span className={`text-sm ${item.pcColor} ml-2`}>
                   {item.percentage}
                 </span>
               </p>
@@ -86,7 +88,6 @@ const Ecommerce = () => {
         </div>
       </div>
 
-      {/* Revenue Updates Section */}
       <div className="flex gap-10 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780  ">
           <div className="flex justify-between">
@@ -195,7 +196,6 @@ const Ecommerce = () => {
         </div>
       </div>
 
-      {/* Revenue Updates Section */}
       <div className="flex gap-10 m-4 flex-wrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg p-6 rounded-2xl">
           <div className="flex justify-between items-center gap-2">
@@ -221,7 +221,7 @@ const Ecommerce = () => {
                     <p className="text-sm text-gray-400">{item.desc}</p>
                   </div>
                 </div>
-                <p className={`text-${item.pcColor}`}>{item.amount}</p>
+                <p className={`${item.pcColor}`}>{item.amount}</p>
               </div>
             ))}
           </div>
@@ -250,7 +250,6 @@ const Ecommerce = () => {
       </div>
 
       <div className="flex flex-wrap justify-center">
-        {/* Weekly Stats */}
         <div className="md:w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">Weekly Stats</p>
@@ -298,8 +297,6 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-
-        {/* Product Branding */}
         <div className="w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">MedicalPro Branding</p>
@@ -366,8 +363,6 @@ const Ecommerce = () => {
             <p className="text-gray-400 text-sm">36 Recent Transactions</p>
           </div>
         </div>
-
-        {/* Daily Activities*/}
         <div className="w-400 bg-white dark:text-gray-200 dark:bg-secondary-dark-bg rounded-2xl p-6 m-3">
           <div className="flex justify-between">
             <p className="text-xl font-semibold">Daily Activities</p>
