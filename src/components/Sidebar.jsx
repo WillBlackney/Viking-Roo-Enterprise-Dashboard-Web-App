@@ -7,6 +7,10 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 import { links } from "../data/dummy";
 import { useStateContext } from "../contexts/ContextProvider";
 
+import vrLogo from "../data/vr_logo_300.png";
+import vrLogoFull from "../data/vr_logo_full.png";
+import "../fonts/CandyBeans.ttf"
+
 const Sidebar = () => {
   const { currentColor, activeMenu, setActiveMenu, screenSize } =
     useStateContext();
@@ -32,7 +36,23 @@ const Sidebar = () => {
               onClick={handleCloseSideBar}
               className="items-center gap-3 ml-3 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900"
             >
-              <SiShopware /> <span>Shoppy</span>
+              <img
+              className="rounded-full w-40 h-16"
+              src={vrLogoFull}
+              alt="user-profile"
+            />
+              {/* <SiShopware /> <span>Shoppy</span> */}
+              {/* <img
+              className="rounded-full w-8 h-8"
+              src={vrLogoFull}
+              alt="user-profile"
+            />
+            <p>
+              <span className="text-white text-3xl" style={{fontFamily : 'CandyBeans'}}>VIKING </span>{" "}
+              <span className="text-orange-200 font-bold ml-1 text-3xl" style={{fontFamily : 'CandyBeans'}}>
+                ROO
+              </span>
+            </p> */}
             </Link>
             <TooltipComponent content="Menu" position="BottomCenter">
               <button
