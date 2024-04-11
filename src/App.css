@@ -13,6 +13,12 @@
   }
 }
 
+@font-face {
+  font-family: "CandyBeans";   /*Can be any text*/
+  src: local("CandyBeans"),
+    url("./fonts/CandyBeans.ttf") format("truetype");
+}
+
 .e-dlg-center-center, .e-quick-popup-wrapper.e-device{
   z-index: 1000000 !important;
 }
